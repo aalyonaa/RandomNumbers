@@ -27,12 +27,12 @@ namespace RandomNumbers
         private int[] GenerateNumbers()
         {
             Random rnd = new Random();
-            int value = rnd.Next(20, 100);
+            int value = rnd.Next(20, 101);
             int[] numbers = new int[value];
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = rnd.Next(-100, 100);
+                numbers[i] = rnd.Next(-100, 101);
                 Console.Write(numbers[i] + " ");
             }
 
@@ -47,7 +47,7 @@ namespace RandomNumbers
         private int[] DoSort(int[] array)
         {
             Random rnd = new Random();
-            int value = rnd.Next(1, 2);
+            int value = rnd.Next(1, 3);
             int[] aaa = _methods[value](array);
 
             Console.WriteLine();
